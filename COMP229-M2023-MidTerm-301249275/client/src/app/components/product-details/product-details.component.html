@@ -17,7 +17,7 @@
       class="badge badge-warning"
       routerLink="/products/{{ currentProduct.id }}"
     >
-      --------------
+      Edit
     </a>
   </div>
 
@@ -63,7 +63,7 @@
       *ngIf="currentProduct.published"
       (click)="updatePublished(false)"
     >
-      --------------
+      Unpublish
     </button>
     <button
       *ngIf="!currentProduct.published"
@@ -74,7 +74,7 @@
     </button>
 
     <button class="badge badge-danger mr-2" (click)="deleteProduct()">
-      --------------
+      Delete
     </button>
 
     <button
@@ -82,7 +82,7 @@
       class="badge badge-success mb-2"
       (click)="updateProduct()"
     >
-      --------------
+      Update
     </button>
     <p>{{ message }}</p>
   </div>
